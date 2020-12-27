@@ -1,1 +1,1 @@
-web: python mftb.py
+web: python3 bot.py
