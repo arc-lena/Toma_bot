@@ -156,6 +156,8 @@ def send_text(message):
                          'Ну добре, йди за своїм останнім подарунком до головної прикраси кожного будинку у цю новорічну ніч) \nСповідаюсь, що тобі сподобався мій квест та подарунки твоєї сестрички ! \nЩАСЛИВОГО НОВОГО 2021 РОКУ!')
         bot.send_photo(message.chat.id,
                        'https://images.unsplash.com/photo-1573690706484-86f444f0b940?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzR8fGZpcmV3b3JrJTIwY2hyaXN0bWFzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60')
+    if message.text.lower() == '':
+        pass
     else:
         bot.send_message(message.chat.id,
                          'Спробуй ще раз!')
