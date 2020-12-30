@@ -44,12 +44,12 @@ def send_text(message):
         bot.send_message(message.chat.id,
                          'Перше слово CHRISTMAS TREE')
     if message.text.lower() == 'ялинка':
-        bot.send_stiker(message.chat.id,
+        bot.send_sticker(message.chat.id,
                        'CAACAgIAAxkBAAEBuilf6gSM6fsv4BaT-vXz_UJfSx7rogACuAAD_G50PZMjhPPchhrXHgQ')
         bot.send_message(message.chat.id,
                          'Правильно! Наступне слово CANDLE')
     if message.text.lower() == 'свічка':
-        bot.send_stiker(message.chat.id,
+        bot.send_sticker(message.chat.id,
                        'CAACAgIAAxkBAAEBuidf6gSFO411THTakmg_rmOjp_Pn0wACfwAD_G50Pft1EhUbq9ciHgQ')
         bot.send_message(message.chat.id,
                          'Правильно! Наступне слово CHRISTMAS STOCKING')
