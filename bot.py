@@ -8,7 +8,7 @@ keyboard1.row('Привіт')
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    bot.send_message(message.chat.id, 'Привіт Томочка, я чарівний Ельф! \nЯкщо ти зможеш розгадати всі мої загадки, то я допоможу тобі знайти всі подарунки від твоєї сестрички :)', reply_markup=keyboard1)
+    bot.send_message(message.chat.id, 'Привіт Томочка, я чарівний Ельф! \nЯкщо ти зможеш розгадати всі мої загадки, то я допоможу тобі знайти всі подарунки від твоєї сестрички :) Але є умова, ПОДАРУНКИ ВІДКРИВАТИ ОДРАЗУ!!!', reply_markup=keyboard1)
     bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAEBtWtf400ByGEvvGKrna68X-aWkWNfDQACRQEAApafjA41nFNn0cipqR4E')
 
 @bot.message_handler(content_types=['text'])
@@ -36,7 +36,7 @@ def send_text(message):
                          'CAACAgIAAxkBAAEBtr1f5O1H113qRDzWAeOoYFfhNYZ85gACWQEAApafjA7SmO_llQSG2h4E')
         bot.send_message(message.chat.id,
                          'Чекаю на ПАРОЛЬ, введи його ;)')
-    if message.text == '?':
+    if message.text == '24':
         bot.send_message(message.chat.id,
                          'Хммм... Знайшла! Але вітати рано, щоб знайти наступний подарунок, варто зіграти у нову гру! \nКажуть ти знаєш англійську? Що ж, перевіримо, я тобі слово - ти мені переклад!')
         bot.send_sticker(message.chat.id,
@@ -62,7 +62,7 @@ def send_text(message):
                          'CAACAgIAAxkBAAEBui9f6gVj9_1XBPkr0HBrRgmD_FLPpgACSgEAApafjA6Mfk73uDljvh4E')
         bot.send_message(message.chat.id,
                          'Чекаю на ПАРОЛЬ, введи його ;)')
-    if message.text.lower() == '??':
+    if message.text.lower() == '27':
         bot.send_message(message.chat.id,
                          'Так швидко?! Ого, ну добре, знову завдання. Відповіси на мої питання?)')
         bot.send_sticker(message.chat.id,
@@ -86,7 +86,7 @@ def send_text(message):
                          'CAACAgIAAxkBAAEBuwJf7FJxkjn3cfX2sYkKWGO8--7Y5QACkQAD8NhFFvS0gZg5aapXHgQ')
         bot.send_message(message.chat.id,
                          'Чекаю на ПАРОЛЬ, введи його ;)')
-    if message.text.lower() == '???':
+    if message.text.lower() == '70':
         bot.send_message(message.chat.id,
                          'Сподобався подаруночок? Йдемо далі, давай ще трошки перевіримо твої знання про новий рік)')
         bot.send_sticker(message.chat.id,
@@ -110,7 +110,7 @@ def send_text(message):
                          'CAACAgIAAxkBAAEBuwRf7FfXVcqg0skeU73wbhp8X7EhXAACkAAD8NhFFoYG4RbUZClBHgQ')
         bot.send_message(message.chat.id,
                          'Чекаю на ПАРОЛЬ, введи його ;)')
-    if message.text.lower() == '????':
+    if message.text.lower() == '1':
         bot.send_message(message.chat.id,
                          'Знову знайшла, напевно все дуже просто, тоді давай дізнаємося як гарно ти знаеш свою сестру.')
         bot.send_sticker(message.chat.id,
@@ -131,10 +131,10 @@ def send_text(message):
         bot.send_message(message.chat.id,
                          'А тепер бігом до новорічної шкарпетки!')
         bot.send_sticker(message.chat.id,
-                         'CAACAgIAAxkBAAEBuxJf7GD5H9iyT2rPOHv1cyDApm1ldgACSAEAApafjA7_eY86oLEVAAEeBA')
+                         'CAACAgIAAxkBAAEBuiVf6gRfEk77IUK20YPrh3XvpN-enAACnQAD8NhFFvEyDCmFKWQxHgQ')
         bot.send_message(message.chat.id,
                          'Чекаю на ПАРОЛЬ, введи його ;)')
-    if message.text.lower() == '?????':
+    if message.text.lower() == '3':
         bot.send_message(message.chat.id,
                          'АХАХАХАХАХАХ, а ти думала все просто так буде?) Ну добре давай останнє завдання.')
         bot.send_sticker(message.chat.id,
@@ -153,6 +153,12 @@ def send_text(message):
                          'Час доби, коли зустрічають Новий рік.')
     if message.text.lower() == 'ніч':
         bot.send_message(message.chat.id,
-                         'Ну добре, йди за своїм останнім подарунком до головної прикраси кожного будинку у цю новорічну ніч)')
+                         'Ну добре, йди за своїм останнім подарунком до головної прикраси кожного будинку у цю новорічну ніч) \nСповідаюсь, що тобі сподобався мій квест та подарунки твоєї сестрички ! \nЩАСЛИВОГО НОВОГО 2021 РОКУ!')
+        bot.send_photo(message.chat.id,
+                       'https://images.unsplash.com/photo-1573690706484-86f444f0b940?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzR8fGZpcmV3b3JrJTIwY2hyaXN0bWFzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60')
+    else:
+        bot.send_message(message.chat.id,
+                         'Спробуй ще раз!')
+
 
 bot.polling()
