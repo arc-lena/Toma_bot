@@ -57,7 +57,7 @@ def send_text(message):
         bot.send_sticker(message.chat.id,
                        'CAACAgIAAxkBAAEBuitf6gSVIxL_VuxPAa-QMCY8IQKUrgACtgAD_G50PUxt8htiLSWMHgQ')
         bot.send_message(message.chat.id,
-                         'Правильно! Лови підказку. Попроси свій подарунок чоловіка-красунчика)')
+                         'Правильно! Лови підказку. Попроси свій подарунок у чоловіка-красунчика)')
         bot.send_sticker(message.chat.id,
                          'CAACAgIAAxkBAAEBui9f6gVj9_1XBPkr0HBrRgmD_FLPpgACSgEAApafjA6Mfk73uDljvh4E')
         bot.send_message(message.chat.id,
@@ -114,7 +114,7 @@ def send_text(message):
         bot.send_message(message.chat.id,
                          'Знову знайшла, напевно все дуже просто, тоді давай дізнаємося як гарно ти знаеш свою сестру.')
         bot.send_sticker(message.chat.id,
-                         'CAACAgIAAxkBAAEBuwlf7Flu_Uo3DqUBldggMCCnY7NKVwACQgEAApafjA4onPpetB8PGB4E')
+                         'CAACAgIAAxkBAAEBu4Nf7OQB0WObxhGpP55-o6pFPSO6LQACSAEAApafjA7_eY86oLEVAAEeBA')
         bot.send_message(message.chat.id,
                          'Який її улюблений колір?')
     if message.text.lower() == 'сірий':
