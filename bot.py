@@ -155,4 +155,4 @@ def send_text(message):
         bot.send_message(message.chat.id,
                          'Ну добре, йди за своїм останнім подарунком до головної прикраси кожного будинку у цю новорічну ніч)')
 
-    bot.polling()
+bot.polling()
